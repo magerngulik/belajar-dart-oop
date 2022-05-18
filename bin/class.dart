@@ -15,8 +15,14 @@ class Person{
     return "Hello, my name is $name";
   }
 
+}
+//menambahkan koding/methot tambahan di dalam class, tanpa harus menggubah isi dari kelas sumber
+extension SayGoodbayOnPerson on Person{
+
+void sayGoodBay(String paramName) => print("Good Bay $paramName, From $name");
 
 }
+
 void main(){
 
 var person1 = Person();
@@ -29,4 +35,5 @@ print(person2.address = "Jalan Terpadu");
 
 person2.sayHello('Zul');
 
+person2.sayGoodBay('DIka');
 }
