@@ -1,5 +1,3 @@
-import 'dart:indexed_db';
-
 class Database{
   Database(){
     print('create new database connection');
