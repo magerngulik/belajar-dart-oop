@@ -1,7 +1,6 @@
 //methed yang di panggil ketika sebuah object di buat, ketia membuat controkter otomatis memaniggil
 //singkat biar class bisa mendapatkan parameter
 class Person{
- 
  String name ='guest';
  String? address;
  final String country="Indonesia";
@@ -15,6 +14,7 @@ Person.withAddress(String address) : this("no name",address);
 //redirec ke named contrucktor 
 Person.fromJakarta():this.withAddress("Jakarta");
 Person.withNoName():this.withName("No Name");
+
 }
 void main(){
 
