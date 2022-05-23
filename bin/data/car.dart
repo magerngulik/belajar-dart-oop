@@ -8,11 +8,17 @@ class Car{
     return 0;
   }
 }
+abstract class HasBrand{
+  String getBrand();
 
-//interface(impements) perwarisan kontrak dimana seluruh data baik field ataupun method harus di deklarasikan ulang 
+}
 
-class Avanza implements Car{
+//interface(impements) perwarisan kontrak dimana seluruh data baik field ataupun method harus di deklarasikan ulang
+//bisa mewarisi lebih dari satu tetapi harus di deklarasi ulang  
+class Avanza implements Car,HasBrand{
   String name ="";
+
+  String getBrand() =>"Toyota";
 
   void drive(){
     print('Avanza is running');
