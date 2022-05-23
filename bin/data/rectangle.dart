@@ -8,11 +8,20 @@ class Rectangle{
   
 
   //variable dalam paramter harus nama dengan variable encapsulasi
-  set width(int value)=> _width=value;
+  //getter dan seter harus yang pengting jika hanya redirect data jangan menggunakan getter and setter
+  set width(int value){
+    if(value >=1){
+      _width=value;
+    }
+  } 
 
+  //jika kita memiliki validasi maka getter dan setter bisa di lakukan
   int get length=> _length;
-
-  set length(int value) => _length=value;
+  set length(int value){
+    if(value >=1){
+      _length=value;
+    }
+  } 
 
 
 }
