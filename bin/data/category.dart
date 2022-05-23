@@ -20,9 +20,14 @@ Category(this.id,this.name);
     }else{
     return false;
     }
-    
-    
+  }
 
+//ada berapa syarat untuk overaide hashcode yaitu:
+// 1. nilai yang dibandingkan harus sama sama integer, 2. nilai yang ditambahkan harus memiliki nilai yang sama berapakali pun nilai tersebut di proses
+  int get hashCode{
+    var result = id.hashCode;
+    result += name.hashCode;
+    return result;
   }
 
 

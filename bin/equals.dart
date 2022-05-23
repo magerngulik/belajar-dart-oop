@@ -7,6 +7,8 @@ void main(){
   print(category1 == category2);
   print(category1 ==category1);
 
-
+//hastcode nilai int dalam object seperti variable, method,field, class dan sebaginya.
+  print(category1.hashCode);
+  print(category2.hashCode);
 
 }
