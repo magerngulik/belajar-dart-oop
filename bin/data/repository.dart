@@ -1,8 +1,15 @@
 import 'dart:mirrors';
 
-class Repository{
-  //transelete dari method to sql
+abstract class CategoryRepository{
+  id(String id);
+  //model dari pemanggilan no such method di class abstrack
+  name(String name);
+  quantity(int quantity);
+  //menjadi batas dari no such method yang bisa di hasilkan;
+}
 
+class Repository extends CategoryRepository{
+  //transelete dari method to sql
   final String _name;
 
   Repository(this._name);

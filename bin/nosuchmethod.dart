@@ -2,8 +2,8 @@ import 'data/repository.dart';
 void main(){
   //tipe dari no such method itu harus dynemic 
   // tidak boleh menggunakan var sebagai variable
-
-  dynamic repository = Repository('products');
+  //bisa di ganti ke var karna method nya sudah di batasi
+  var repository = Repository('products');
   repository.id('1');
   repository.name('laptop');
   repository.quantiry(1000);
