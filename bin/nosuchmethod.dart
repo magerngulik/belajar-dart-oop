@@ -6,7 +6,7 @@ void main(){
   var repository = Repository('products');
   repository.id('1');
   repository.name('laptop');
-  repository.quantiry(1000);
+  repository.quantity(1000);
   // hasil running
   // select * from products where id = '1'
   // select * from products where name = 'laptop'
