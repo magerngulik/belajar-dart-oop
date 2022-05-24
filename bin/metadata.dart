@@ -3,8 +3,8 @@ class sample{
   String toString(){
     return "Sample";
   }
-
-  @deprecated('do not use this anymore');
+  //d nya besar
+  @Deprecated('do not use this anymore')
   void doNotUseThis(){
   }
 
@@ -18,8 +18,8 @@ class sample{
 
   class Apllication{
     //cara menanggil todo di atas;
-    @Todo('will be implemented next realese');
+    @Todo('will be implemented next realese')
     void featureA(){
-      
+
     }
   }
