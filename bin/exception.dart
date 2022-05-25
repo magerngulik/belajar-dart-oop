@@ -21,6 +21,7 @@ class Validation{
 
 void main(List<String> args) {
   //untuk penaganan error
+  //exeption yang di batasi
   try{
   Validation.validate("ada isi nya","111");
   } on ValidationExeption catch (exception){
@@ -30,5 +31,16 @@ void main(List<String> args) {
   }finally{
     print('Finally');
   }
+
+//exeption semua tanpa terkecuali
+  try{
+    Validation.validate("eko","eko");
+  } catch (exception){
+    print('Error : ${exception.toString()}');
+  }finally{
+    print('Finally');
+  }
+
+
   print("Selesai");
 }
