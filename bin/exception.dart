@@ -27,6 +27,8 @@ void main(List<String> args) {
     print('Validation Error: ${exception.message}');
   } on Exception catch (exception){
     print('Error: ${exception.toString()}');    
+  }finally{
+    print('Finally');
   }
   print("Selesai");
 }
