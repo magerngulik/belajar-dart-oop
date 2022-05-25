@@ -33,10 +33,12 @@ void main(List<String> args) {
   }
 
 //exeption semua tanpa terkecuali
+//menambahkan stack trace sebagai informasi tambahan dari error dan baris error nya
   try{
     Validation.validate("eko","eko");
-  } catch (exception){
+  } catch (exception,stackTrace){
     print('Error : ${exception.toString()}');
+    print('Error : ${stackTrace.toString()}');
   }finally{
     print('Finally');
   }
